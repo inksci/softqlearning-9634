@@ -1,6 +1,14 @@
 # Github 项目部署
 新的 soft q learning (sql) 分支将 rllab 更换成了 garage，这里推荐用 rllab，即需要使用分支为：9634 的 sql。Git 切换分支的命令为：git checkout。 
 
+Download rllab (including mujoco 131) here: https://github.com/inksci/rllab
+
+# Run
+Run codes bellow first:
+```
+cd rllab/
+export PYTHONPATH=$(pwd):${PYTHONPATH}
+```
 # Soft Q-Learning
 Soft Q-learning (SQL) is a deep reinforcement learning framework for training maximum entropy policies in continous domains. The algorithm is based on the paper [Reinforcement Learning with Deep Energy-Based Policies](https://arxiv.org/abs/1702.08165) presented at the International Conference on Machine Learning (ICML), 2017.
 
